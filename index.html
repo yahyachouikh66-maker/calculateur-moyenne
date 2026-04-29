@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CalcS2 - Moyenne L1 Info S2</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-calculator"></i> CalcS2</h1>
+      <p>Calculateur de Moyenne - Semestre 2 L1 Informatique</p>
+      <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <div class="main">
+      <div id="subjects"></div>
+
+      <div class="sidebar">
+        <button onclick="calculateAll()" class="calculate-btn">
+          <i class="fas fa-chart-line"></i> Calculer la Moyenne Générale
+        </button>
+
+        <div class="result-card">
+          <h2>Résultat Final</h2>
+          <div class="final-average">
+            <span id="moyenne-generale">0.00</span>
+            <p>/ 20</p>
+          </div>
+          <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+          </div>
+          <p id="mention" class="mention"></p>
+        </div>
+
+        <button onclick="resetAll()" class="reset-btn">
+          <i class="fas fa-trash"></i> Réinitialiser toutes les notes
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p>made by yahya chouikh</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
